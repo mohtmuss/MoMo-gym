@@ -23,7 +23,6 @@ export default function Register() {
     e.preventDefault()
     setError('')
 
-    // Client-side checks before hitting the API
     if (form.password !== form.confirm_password) {
       setError('Passwords do not match')
       return
@@ -68,7 +67,9 @@ export default function Register() {
       <div className="bg-white rounded-2xl shadow-sm border border-gray-200 w-full max-w-md p-8">
 
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-orange-500">Merkato</h1>
+          <Link to="/">
+            <img src="/logo.png" alt="Merkato" className="h-20 mx-auto" />
+          </Link>
           <p className="text-gray-500 mt-1">Create your account</p>
         </div>
 
@@ -80,7 +81,6 @@ export default function Register() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
 
-          {/* Names side by side */}
           <div className="grid grid-cols-2 gap-3">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -93,7 +93,7 @@ export default function Register() {
                 onChange={handleChange}
                 required
                 className={inputClass}
-                placeholder="Your First Name"
+                placeholder="Mohamed"
               />
             </div>
             <div>
@@ -107,7 +107,7 @@ export default function Register() {
                 onChange={handleChange}
                 required
                 className={inputClass}
-                placeholder="Your Last Name"
+                placeholder="Mussa"
               />
             </div>
           </div>
@@ -158,7 +158,6 @@ export default function Register() {
             />
           </div>
 
-          {/* Zip + phone side by side */}
           <div className="grid grid-cols-2 gap-3">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">

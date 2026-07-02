@@ -38,7 +38,7 @@ export default function Home() {
 
         {/* Navbar */}
         <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 py-5">
-          <h1 className="text-2xl font-bold text-orange-400">Merkato</h1>
+          <img src="/logo.png" alt="Merkato" className="h-12" />
           <div className="flex items-center gap-3">
             <Link
               to="/login"
