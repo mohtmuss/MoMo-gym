@@ -46,7 +46,9 @@ export default function Login() {
       <div className="bg-white rounded-2xl shadow-sm border border-gray-200 w-full max-w-md p-8">
 
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-orange-500">Merkato</h1>
+          <Link to="/">
+            <img src="/logo.png" alt="Merkato" className="h-20 mx-auto" />
+          </Link>
           <p className="text-gray-500 mt-1">Sign in to your account</p>
         </div>
 
